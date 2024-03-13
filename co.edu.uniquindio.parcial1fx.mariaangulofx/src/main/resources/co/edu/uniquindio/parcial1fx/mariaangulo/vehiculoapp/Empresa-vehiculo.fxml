@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.parcial1fx.mariaangulo.vehiculoapp.controller.VehiculoController">
+   <children>
+      <SplitPane dividerPositions="0.6494974874371859" layoutX="-1.0" layoutY="-3.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="251.0" prefWidth="598.0">
+               <children>
+                  <Separator layoutY="35.0" prefHeight="0.0" prefWidth="600.0" />
+                  <Button fx:id="btnAgregarvehiculo" layoutX="229.0" layoutY="215.0" mnemonicParsing="false" onAction="#onAgregarvehiculo" text="Agregar Vehiculo" />
+                  <Label layoutX="227.0" layoutY="14.0" text="Informacion Vehiculo" />
+                  <Label layoutX="22.0" layoutY="79.0" text="Placa:" />
+                  <TextField fx:id="TxtPlaca" layoutX="69.0" layoutY="75.0" prefHeight="26.0" prefWidth="200.0" />
+                  <Label layoutX="22.0" layoutY="128.0" text="Modelo:" />
+                  <TextField fx:id="txtModelo" layoutX="69.0" layoutY="124.0" prefHeight="26.0" prefWidth="200.0" />
+                  <Label layoutX="309.0" layoutY="79.0" text="Marca:" />
+                  <Label layoutX="309.0" layoutY="129.0" text="Color:" />
+                  <TextField fx:id="txtMarca" layoutX="364.0" layoutY="75.0" prefHeight="26.0" prefWidth="200.0" />
+                  <TextField fx:id="txtColor" layoutX="364.0" layoutY="124.0" prefHeight="26.0" prefWidth="200.0" />
+                  <RadioButton fx:id="btnVehiculoCarga" layoutX="156.0" layoutY="170.0" mnemonicParsing="false" onAction="#onVehiculoCarga" text="Vehiculo Carga" />
+                  <RadioButton fx:id="btnVehiculoTranporte" layoutX="309.0" layoutY="170.0" mnemonicParsing="false" onAction="#onVehiculoTranporte" text="Vehiculo Transporte" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="165.0" prefWidth="598.0">
+               <children>
+                  <TextArea fx:id="txtResultado" layoutX="219.0" layoutY="10.0" prefHeight="115.0" prefWidth="365.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
